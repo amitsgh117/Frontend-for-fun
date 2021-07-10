@@ -1,0 +1,66 @@
+body{
+		background-image: url('movie.jpg');
+		background-size: cover;
+		font-family: serif;
+		
+
+	}
+	#navbar{
+		
+	}
+
+	#navbar ul{
+		display: flex;
+
+	}
+	#navbar ul li{
+		list-style: none;
+		padding: 15px;
+	}
+	#navbar ul li a{
+		display: block;
+		padding: 3px 25px;
+		text-decoration: none;
+		border-radius: 15px;
+		color: white;
+		font-size: 25px;
+		transition-property: background-color;
+		transition-duration: 1s;
+	}
+	#navbar::before{
+		content: "";
+		position: absolute;
+		background-color: grey;
+		opacity: 20%;
+		height: 10%;
+		width: 100%;
+		z-index: -1;
+	}
+	#navbar ul li a:hover{
+		background-color: white;
+		color: black;
+	}
+
+	#list{
+		margin: 30px;
+		display: flex;
+		align-items: center;
+	}
+	#list .image{
+		padding: 60px;
+
+	}
+	#list .image img{
+		position: relative;
+		height: 350px;
+		opacity: 60%;
+		cursor: pointer;
+		transition-property: opacity, height;
+		transition-duration: 0.5s;
+
+	}
+	#list .image img:hover{
+		height: 390px;
+		opacity: 100%;
+		
+	}
